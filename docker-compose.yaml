@@ -1,0 +1,30 @@
+version: "3"
+# Build path indicates where your Dockerfile for each service will be located
+# and the appropriate context
+services:
+  # Expected services
+  web_client:
+    build: ./web_client
+    image: synicix/vathes-pa-web-client:0.0.0
+    ports:
+      - "3000:3000" # Remember to change this back later
+    networks:
+      - main
+    stdin_open: true
+  dj_api:
+    build: ./dj_api
+    image: synicix/vathes-pa-dj-api:0.0.0
+    ports:
+      - "5000:5000"
+    networks:
+      - main
+    env_file:
+      - ./datajoint_credentials.env
+    
+  # You may add any supplemental services here
+  # ...
+# This allows services to reach each other from within Docker containers and
+# for an internal name resolution based on the 'names' of the services defined
+# above
+networks:
+  main:
