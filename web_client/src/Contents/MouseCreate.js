@@ -8,7 +8,7 @@ class MouseCreate extends Component {
             message: null,
             subject_dob: '',
             subject_name: '',
-            subject_sex: 'M',
+            subject_sex: '',
         };
 
         // On Change Functions
@@ -68,6 +68,7 @@ class MouseCreate extends Component {
                 <input className='mouse-create-form-input' type='text' value={this.state.subject_name} onChange={this.handleSubjectNameChange}></input>
                 <label className='mouse-create-form-label'>subject_sex</label>
                 <select id="mouse-sex" className='mouse-setup-create-form-select' value={this.state.subject_sex} onChange={this.handleSubjectSexChange}>
+                    <option value=''>Select Mouse Sex</option>
                     <option value="M">M</option>
                     <option value="F">F</option>
                 </select>
