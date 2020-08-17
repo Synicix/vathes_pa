@@ -7,7 +7,7 @@
 
 Website shoud be accessable via localhost:3000 or <computer-name>:3000
 
-CREATE, GET are implmented for all 3 tables, however only Experiment Setup has UPDATE and DELETE functionallity too. The backend API is implmented for all three though.
+CREATE, GET are implmented for all 3 tables, however only Experiment Setup has the additional functions of UPDATE and DELETE on top of CREATE and GET. The backend API is implmented for all three though.
 (This is cause it is quite tedious to do it for all 3 and unfortunately I have other commitments I need to fullfill.
 
 The react website doesn't have that much extensive docs mainly cause of time constraints.
