@@ -9,5 +9,6 @@ RUN apt-get install npm -y
 ADD ./ /src
 
 WORKDIR /src
+RUN npm install
 ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
 CMD npm start

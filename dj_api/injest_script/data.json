@@ -1,0 +1,37 @@
+[
+    {
+        "session_date": "2008-06-06",
+        "experiment_setup": 1,
+        "subject_name": "K0 (chx10)",
+        "subject_dob": "2008-03-02",
+        "subject_sex": "M"
+    },
+    {
+        "session_date": "2008-06-09",
+        "experiment_setup": 2,
+        "subject_name": "K0 (chx10)",
+        "subject_dob": "2008-03-02",
+        "subject_sex": "M"
+    },
+    {
+        "session_date": "2008-06-07",
+        "experiment_setup": 1,
+        "subject_name": "K0 (chx20)",
+        "subject_dob": "2008-03-10",
+        "subject_sex": "F"
+    },
+    {
+        "session_date": "2008-06-08",
+        "experiment_setup": 2,
+        "subject_name": "K0 (chx20)",
+        "subject_dob": "2008-03-10",
+        "subject_sex": "F"
+    },
+    {
+        "session_date": "2008-06-10",
+        "experiment_setup": 1,
+        "subject_name": "M0 (chx10)",
+        "subject_dob": "2008-03-25",
+        "subject_sex": "F"
+    }
+]
