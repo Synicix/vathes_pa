@@ -1,4 +1,4 @@
-version: "2.4"
+version: "3"
 # Build path indicates where your Dockerfile for each service will be located
 # and the appropriate context
 services:
@@ -7,7 +7,7 @@ services:
     build: ./web_client
     image: synicix/vathes-pa-web-client:0.0.0
     ports:
-      - "3000:80" # Remember to change this back later
+      - "3000:3000" # Remember to change this back later
     networks:
       - main
     volumes:

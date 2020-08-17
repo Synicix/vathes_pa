@@ -1,0 +1,32 @@
+.content-outer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+video {
+    background-color: #202020;
+    box-shadow: 0px 3px 3px grey;
+    padding: 1%;
+    width: 89%;
+    margin: 2% 5%;
+}
+
+.content-inner-container img {
+    background-color: #202020;
+    box-shadow: 0px 3px 3px grey;
+    padding: 1%;
+    width: 98%;
+    margin: 5% 0%;
+}

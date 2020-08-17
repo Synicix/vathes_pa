@@ -1,10 +1,13 @@
 from flask import Flask, request
+from flask_cors import CORS
 import json
+
 from .datajoint_tables.Mouse import Mouse
 from .datajoint_tables.ExperimentSetups import ExperimentSetups
 from .datajoint_tables.MouseRetinaExperimentSessions import MouseRetinaExperimentSessions
 
 app = Flask('dj_api')
+cors = CORS(app)
 
 @app.route('/')
 def server_status_response():
@@ -29,7 +32,6 @@ def insert_into_mouse():
 @app.route('/update-tuple-from-mouse', methods=['POST'])
 def update_tuple_from_mouse():
     try:
-        # Datajoint doesn't have an update option thus we delete then insert
         tuple_dict = json.loads(request.data)
 
         # Delete entry first

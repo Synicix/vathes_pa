@@ -4,9 +4,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 RUN apt install python3-pip -y
-RUN pip3 install datajoint flask
+RUN pip3 install datajoint flask flask-cors
 
 ADD ./ /src
 
-WORKDIR /src
-CMD sleep infinity
+WORKDIR /src/dj_api
+CMD flask run -h 0.0.0.0
