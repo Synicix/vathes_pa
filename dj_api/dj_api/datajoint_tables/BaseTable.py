@@ -10,23 +10,24 @@ class BaseTable:
     All datajoint tables part of the main framework will inherite from this table.
     """
 
+    """
+    Utility helper function to compute the md5 hash given the tuple_dict
+
+    Parameters:
+        tuple_dict (dict): dictionary to hash
+
+    Returns:
+        str: 128 byte md5 hash string
+    """
     @staticmethod
     def compute_md5_hash(tuple_dict):
-        """
-        Utility helper function to compute the md5 hash given the tuple_dict
-
-        Parameters:
-            tuple_dict (dict): dictionary to hash
-
-        Returns:
-            str: 128 byte md5 hash string
-        """
+       
         string_to_hash = ""
         for _, data in tuple_dict.items():
             string_to_hash += (str(data))
         return hashlib.md5(string_to_hash.encode()).hexdigest()
 
-     """
+    """
     Utility function to handle deletion of a single tuple
 
     Parameters:

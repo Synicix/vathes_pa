@@ -102,7 +102,7 @@ class MouseRetinaExperiementSessionsCreate extends Component {
           <option value=''>Select Experiment Setup ID</option>
           {
             this.state.experiementSetups.map(tuple => (
-              =<option value={tuple.experiment_setup_hash} key={tuple.experiment_setup_id}>{tuple.experiment_setup_id}</option>
+              <option value={tuple.experiment_setup_hash} key={tuple.experiment_setup_id}>{tuple.experiment_setup_id}</option>
             ))
           }
         </select>

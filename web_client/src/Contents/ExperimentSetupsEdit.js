@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import React, {Component} from "react";
+import {Redirect} from "react-router-dom/cjs/react-router-dom.min";
 import './ExperimentSetupsEdit.css';
 
  
