@@ -41,7 +41,7 @@ class ExperimentSetups extends Component {
         <div className='content-inner-container'>
           <div>
             <h1>Experiment Setups</h1>
-            <NavLink className='experiment-setups-create-link' to='experiment-setups/create'>
+            <NavLink className='experiment-setups-create-link' to='/experiment-setups/create'>
               <button className='expierment-setups-create-button'>+</button>
             </NavLink>
             <table className='experiment-setup-table'>
@@ -59,7 +59,11 @@ class ExperimentSetups extends Component {
                       <td>{tuple.experiment_setup_id}</td>
                       <td>{tuple.description}</td>
                       <td>
-                        <button className='experiment-setups-tuple-edit-button'>Edit</button>
+                        {
+                          <NavLink className='experiment-setups-edit-link' to={'/experiment-setups/edit/:' + tuple.experiment_setup_hash}>
+                            <button className='experiment-setups-tuple-edit-button'>Edit</button>
+                          </NavLink>
+                        }
                       </td>
                     </tr>
                   ))

@@ -9,4 +9,4 @@ RUN pip3 install datajoint flask flask-cors
 ADD ./ /src
 
 WORKDIR /src/dj_api
-CMD flask run -h 0.0.0.0
+CMD export FLASK_ENV=development && flask run -h 0.0.0.0

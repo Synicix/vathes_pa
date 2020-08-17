@@ -31,9 +31,13 @@
     text-decoration: none;
 }
 
+.experiment-setups-edit-link {
+    text-decoration: none;
+}
+
 .experiment-setups-tuple-edit-button {
     width: 100%;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     padding: 2%;

@@ -59,6 +59,17 @@ def get_experimental_setups():
     except Exception as e:
         return dict(error_message=str(e))
 
+@app.route('/get-experiment-setups-by-hash', methods=['POST'])
+def get_experimental_setups_by_hash():
+    try:
+        print(request.data)
+        result = ExperimentSetups & json.loads(request.data)
+        if len(result) != 1:
+            raise Exception('Query return 0 or more then 1 entry')
+        return dict(data=result.fetch1())
+    except Exception as e:
+        return dict(error_message=str(e))
+
 @app.route('/insert-into-experiment-setups', methods=['POST'])
 def insert_into_experimental_setups():
     try:

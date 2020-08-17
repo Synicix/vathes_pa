@@ -6,9 +6,9 @@ import './App.css'
 
 import NavBar from '../NavBar/NavBar.js'
 import Home from '../Contents/Home.js'
-import Project from '../Contents/Project.js';
 import ExperimentSetups from '../Contents/ExperimentSetups.js'
 import ExperimentSetupsCreate from '../Contents/ExperimentSetupsCreate.js';
+import ExperimentSetupsEdit from '../Contents/ExperimentSetupsEdit.js';
 import NotFound from '../Contents/NotFound.js';
 import {Switch} from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -57,7 +57,7 @@ class App extends Component {
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/experiment-setups' component={ExperimentSetups}/>
                         <Route exact path='/experiment-setups/create' component={ExperimentSetupsCreate}/>
-                        <Route exact path={'/experiment-setups-create:experiment-setup-hash'} component={Project}/>
+                        <Route path={'/experiment-setups/edit/:hash'} component={ExperimentSetupsEdit}/>
                         <Route component={NotFound} />
                     </Switch>
                 </div>
