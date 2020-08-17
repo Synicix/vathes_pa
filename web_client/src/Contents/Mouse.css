@@ -1,24 +1,24 @@
-.experiment-setups-table {
+.mouse-table {
     background-color: #222222;
     color: white;
     border-collapse: collapse;
     box-shadow: 0px 3px 3px grey;
 }
 
-.experiment-setups-table th {
+.mouse-table th {
     text-align: left;
     border: 1px solid white;
     background-color: #444444;
     padding: 8px;
 }
 
-.experiment-setups-table td {
+.mouse-table td {
     text-align: left;
     border: 1px solid white;
     padding: 8px;
 }
 
-.experiment-setups-create-button {
+.mouse-create-button {
     display: block;
     margin-left: auto;
     margin-bottom: 2%;
@@ -27,15 +27,15 @@
     color: #ffffff;
 }
 
-.experiment-setups-create-link {
+.mouse-create-link {
     text-decoration: none;
 }
 
-.experiment-setups-edit-link {
+.mouse-edit-link {
     text-decoration: none;
 }
 
-.experiment-setups-tuple-edit-button {
+.mouse-tuple-edit-button {
     width: 100%;
     display: inline-block;
     margin-left: auto;

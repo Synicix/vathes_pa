@@ -22,7 +22,7 @@ class ExperimentSetupsEdit extends Component {
     }
 
     componentDidMount() {
-        fetch('http://192.168.2.91:5000/get-experiment-setups-by-hash',  {
+        fetch('/get-experiment-setups-by-hash',  {
             method: 'POST',
             body: JSON.stringify({experiment_setup_hash: this.props.match.params.hash.substring(1)})
         })

@@ -12,6 +12,7 @@ services:
       - main
     volumes:
       - ./web_client:/src
+    stdin_open: true
   dj_api:
     build: ./dj_api
     image: synicix/vathes-pa-dj-api:0.0.0

@@ -30,7 +30,7 @@ class ExperiementSetupsCreate extends Component {
             this.setState({message: "Fields cannot be empty"});
         }
         else {
-            fetch('http://192.168.2.91:5000/insert-into-experiment-setups', {
+            fetch('/insert-into-experiment-setups', {
                 method: 'POST',
                 body: JSON.stringify({
                     experiment_setup_id: this.state.experiment_setup_id,

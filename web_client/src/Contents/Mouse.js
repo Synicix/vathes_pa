@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {NavLink} from 'react-router-dom';
-import './ExperimentSetups.css'
+import './Mouse.css'
  
-class ExperimentSetups extends Component {
+class Mouse extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isLoaded: false,
       error_message: null,
-      experimentSetups: []
+      mouses: []
     };
   }
 
   componentDidMount() {
-    fetch("/get-experiment-setups", {
+    fetch("/get-mouse", {
       method: 'GET',
     })
     .then(response  => response.json())
@@ -40,31 +40,25 @@ class ExperimentSetups extends Component {
       return (
         <div className='content-inner-container'>
           <div>
-            <h1>Experiment Setups</h1>
-            <NavLink className='experiment-setups-create-link' to='/experiment-setups/create'>
-              <button className='experiment-setups-create-button'>+</button>
+            <h1>Mouse</h1>
+            <NavLink className='mouse-create-link' to='/mouse/create'>
+              <button className='mouse-create-button'>+</button>
             </NavLink>
-            <table className='experiment-setups-table'>
+            <table className='mouse-table'>
               <tbody>
                 <tr>
-                  <th>experiment_setup_hash</th>
-                  <th>experiment_setup_id</th>
-                  <th>description</th>
-                  <th></th>
+                  <th>mouse_hash</th>
+                  <th>subject_dob</th>
+                  <th>subject_name</th>
+                  <th>subject_sex</th>
                 </tr>
                 {
                   this.state.experimentSetups.map(tuple => (
-                    <tr key={tuple.experiment_setup_hash}>
-                      <td>{tuple.experiment_setup_hash}</td>
-                      <td>{tuple.experiment_setup_id}</td>
-                      <td>{tuple.description}</td>
-                      <td>
-                        {
-                          <NavLink className='experiment-setups-edit-link' to={'/experiment-setups/edit/:' + tuple.experiment_setup_hash}>
-                            <button className='experiment-setups-tuple-edit-button'>Edit</button>
-                          </NavLink>
-                        }
-                      </td>
+                    <tr key={tuple.mouse_hash}>
+                      <td>{tuple.mouse_hash}</td>
+                      <td>{tuple.subject_dob}</td>
+                      <td>{tuple.subject_name}</td>
+                      <td>{tuple.subject_sex}</td>
                     </tr>
                   ))
                 }
@@ -79,4 +73,4 @@ class ExperimentSetups extends Component {
   }
 }
 
-export default ExperimentSetups;
+export default Mouse;

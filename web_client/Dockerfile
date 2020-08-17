@@ -9,4 +9,5 @@ RUN apt-get install npm -y
 ADD ./ /src
 
 WORKDIR /src
-CMD sleep infinity
+ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
+CMD npm start

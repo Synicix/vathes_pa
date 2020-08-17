@@ -12,7 +12,7 @@ class NavBar extends Component {
                 </div>
                 <ul className='left-nav'>
                     <li><NavLink className='nav-link' to='/experiment-setups'>Experiment Setups</NavLink></li>
-                    <li><NavLink className='nav-link' to='/mouses'>Mouse</NavLink></li>
+                    <li><NavLink className='nav-link' to='/mouse'>Mouse</NavLink></li>
                     <li><NavLink className='nav-link' to='/mouse-retina-experiment-sessions'>Mouse Retina Experiment Sessions</NavLink></li>
                 </ul>
             </nav>
