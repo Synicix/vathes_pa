@@ -54,7 +54,7 @@ class MouseRetinaExperimentSessions extends Component {
                 </tr>
                 {
                   this.state.mouseRetinaExperimentSessions.map(tuple => (
-                    <tr key={tuple.mouse_hash}>
+                    <tr key={tuple.session_hash}>
                       <td>{tuple.session_hash}</td>
                       <td>{tuple.session_date}</td>
                       <td>{tuple.experiment_setup_id}</td>

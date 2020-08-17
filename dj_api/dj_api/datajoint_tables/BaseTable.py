@@ -26,6 +26,15 @@ class BaseTable:
             string_to_hash += (str(data))
         return hashlib.md5(string_to_hash.encode()).hexdigest()
 
+     """
+    Utility function to handle deletion of a single tuple
+
+    Parameters:
+        restriction_dict (dict): dict for restricting the class with
+
+    Returns:
+        None
+    """
     @classmethod
     def delete_by_restriction_dict(cls, restriction_dict):
         tuple_to_delete = cls & restriction_dict

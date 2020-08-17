@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {NavLink} from 'react-router-dom';
-import './Mouse.css'
+import './Mouse.css';
  
 class Mouse extends Component {
   constructor(props) {

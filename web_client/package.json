@@ -34,5 +34,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"http://dj_api:5000"
+  "proxy": "http://dj_api:5000"
 }

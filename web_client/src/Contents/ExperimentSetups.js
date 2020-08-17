@@ -71,7 +71,6 @@ class ExperimentSetups extends Component {
               </tbody>
             </table>
           </div>
-          
         </div>
       );
     }
